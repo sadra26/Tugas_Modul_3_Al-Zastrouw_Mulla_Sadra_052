@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(colorSchemeSeed: Colors.indigo, useMaterial3: true),
+      theme: ThemeData(colorSchemeSeed: const Color.fromARGB(255, 114, 66, 138), useMaterial3: true),
       home: const HalamanProfil(),
     );
   }
@@ -23,7 +23,7 @@ class HalamanProfil extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Praktikum Layout'),
-        backgroundColor: Colors.indigo,
+        backgroundColor: const Color.fromARGB(255, 71, 54, 106),
         foregroundColor: Colors.white,
       ),
       body: SingleChildScrollView(
@@ -48,12 +48,12 @@ class HalamanProfil extends StatelessWidget {
               padding: const EdgeInsets.all(16),
               margin: const EdgeInsets.symmetric(vertical: 8),
               decoration: BoxDecoration(
-                color: Colors.indigo,
+                color: const Color.fromARGB(255, 63, 181, 73),
                 borderRadius: BorderRadius.circular(16),
               ),
               child: const Text(
                 'Halo! Ini kartu profil saya.',
-                style: TextStyle(color: Colors.white, fontSize: 18),
+                style: TextStyle(color: Color.fromARGB(255, 68, 49, 83), fontSize: 18),
               ),
             ),
             const SizedBox(height: 16),
@@ -70,9 +70,9 @@ class HalamanProfil extends StatelessWidget {
                   children: [
                     const CircleAvatar(
                       radius: 36,
-                      backgroundColor: Colors.indigo,
+                      backgroundColor: Color.fromARGB(255, 58, 197, 176),
                       child: Text(
-                        'ASM',
+                        'NBI',
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 22,
@@ -89,7 +89,7 @@ class HalamanProfil extends StatelessWidget {
                             children: [
                               Flexible(
                                 child: Text(
-                                  'Al-Zastrouw Mulla Sadra',
+                                  'Noval Bagas Irianto',
                                   style: TextStyle(
                                     fontSize: 18,
                                     fontWeight: FontWeight.bold,
@@ -100,7 +100,7 @@ class HalamanProfil extends StatelessWidget {
                               SizedBox(width: 6),
                               Icon(
                                 Icons.verified,
-                                color: Colors.blue,
+                                color: Color.fromARGB(255, 42, 42, 190),
                                 size: 20,
                               ),
                             ],
@@ -108,7 +108,7 @@ class HalamanProfil extends StatelessWidget {
                           const SizedBox(height: 8),
                           const _InfoBaris(
                             icon: Icons.badge,
-                            teks: 'NIM 241080200052', 
+                            teks: 'NIM 241080200024', 
                           ),
                           const _InfoBaris(
                             icon: Icons.school,
@@ -116,11 +116,11 @@ class HalamanProfil extends StatelessWidget {
                           ),
                           const _InfoBaris(
                             icon: Icons.sports_esports,
-                            teks: 'Hobi: Ngoding & main game', 
+                            teks: 'Hobi: Olahraga, Bliard' 
                           ),
                           const _InfoBaris(
                             icon: Icons.email,
-                            teks: 'sadra@gmail.com', 
+                            teks: 'novalganteng@gmail.com', 
                           ),
                         ],
                       ),
@@ -148,7 +148,7 @@ class _InfoBaris extends StatelessWidget {
       padding: const EdgeInsets.only(top: 4),
       child: Row(
         children: [
-          Icon(icon, size: 16, color: Colors.indigo),
+          Icon(icon, size: 16, color: const Color.fromARGB(255, 2, 86, 27)),
           const SizedBox(width: 8),
           Expanded(child: Text(teks)),
         ],
